@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+body {
+  width: 100%;
+
+}
+a {
+  display: inline-block;
+  color: lightgrey;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  white-space: nowrap;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.23);
+  color: white;
+  transform: scale(1.03);
+}
+a:active {
+  transform: scale(0.98);
+}
+
+#prodetails .single-pro-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.small-img-group {
+  display: flex;
+
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small-img-col {
+  margin-top: 1rem;
+  max-width: 100%;
+  flex-basis: 24%;
+  cursor: pointer;
+  height: 4rem;
+}
+.small-img-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+span {
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  background: #f3f3f3;
+  border-radius: 10rem;
+  width: 6rem;
+  height: 1rem;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.col > button,
+.number {
+  background: #f3f3f3;
+  border: 0px;
+  text-align: center;
+  color: #3a4980;
+}
+
+button {
+  color: #3a4980;
+  user-select: none;
+  outline: none;
+  font-size: larger;
+  font-weight: bold;
+}
+#minus-btn {
+  color: gray;
+}
+
+#count {
+  height: 0;
+  align-content: center;
+}
+
+#prodetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+#prodetails .single-pro-details p {
+  margin-top: 10px;
+  color: gray;
+  font-size: smaller;
+}
+#prodetails .single-pro-details h4 {
+  margin: 0px;
+}
+#prodetails .single-pro-details h2 {
+  margin: 0px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+  #prodetails {
+    flex-direction: column;
+  }
+  body{
+    justify-content: center;
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #prodetails {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  #prodetails .single-pro-image {
+    margin-right: 50px;
+    height: 66vh;
+    width: 50%;
+  }
+  #prodetails .single-pro-image img {
+    width: 100%;
+  }
+  #prodetails .single-pro-details {
+    width: 50%;
+  }
+  .small-img-group {
+    width: 50%;
+  }
+  body{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 1025px) {
+  #prodetails {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  #prodetails .single-pro-image {
+    margin-right: 50px;
+    height: 66vh;
+    width: 50%;
+  }
+  #prodetails .single-pro-image img {
+    width: 100%;
+  }
+  #prodetails .single-pro-details {
+    width: 50%;
+  }
+  .small-img-group {
+    width: 50%;
+  }
+  body{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+}
+.color-picker {
+  display: flex;
+  margin-top: -0.5rem;
+}
+
+.color-option {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.color-option.selected {
+  outline: 3px solid brown;
+  outline-offset: 4px;
+}
+
+.color-option.selected::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.size-picker {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.size-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: gray;
+}
+
+.size-option input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  outline: none;
+  transition: 0.2s all linear;
+  margin-right: 10px;
+}
+
+.size-option input:checked {
+  border: 6px solid #3A4980;
+}
+
+.size-option input:checked + span {
+  color: #3A4980;
+}
