@@ -22,6 +22,7 @@
           <div class="small-img-col">
             <img
               id="carousel-image-1"
+              class="selected-img"
               width="100%"
               src="https://images.unsplash.com/photo-1598626431046-c7978e636c14?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Image 1"
@@ -59,9 +60,9 @@
         <hr class="solid" />
         <div style="display: flex">
           <h2 style="color: #3a4980">$12999.00</h2>
-          <p style="margin-left: 2rem; color: #ff000080">35% off</p>
+          <p style="margin-left: 1rem; color: #ff000080">35% off</p>
         </div>
-        <h4 style="text-decoration: line-through; color: grey">$12999.00</h4>
+        <h4 style="text-decoration: line-through; color: grey">$19999.00</h4>
 
         <hr class="solid" />
         <p>Choose a color</p>
@@ -72,6 +73,7 @@
           <div class="color-option" style="background-color: #ffd3f8"></div>
         </div>
         <hr class="solid" />
+        <p>Choose a size</p>
         <div class="size-picker">
           <label class="size-option">
             <input type="radio" name="size" value="small" />
@@ -96,20 +98,37 @@
           <!-- Add more options as needed -->
         </div>
 
-        <div class="center container">
-          <div class="button col">
-            <button id="minus-btn">-</button>
+        <div style="display: flex; margin-top: 1rem; margin-bottom: 1rem">
+          <div class="center container">
+            <div class="button col">
+              <button id="minus-btn">-</button>
+            </div>
+            <div class="number col">
+              <h1 id="count">0</h1>
+            </div>
+            <div class="button col">
+              <button id="plus-btn">+</button>
+            </div>
           </div>
-          <div class="number col">
-            <h1 id="count">0</h1>
-          </div>
-          <div class="button col">
-            <button id="plus-btn">+</button>
-          </div>
+          <button
+            id="add-to-cart"
+            style="
+              width: 100%;
+              margin-left: 2rem;
+              border-radius: 3rem;
+              border: transparent;
+              height: 3rem;
+              background-color: #3a4980;
+              color: white;
+            "
+          >
+            Add to cart
+          </button>
         </div>
         <hr class="solid" />
-        <p style="word-wrap:break-word;">
-          The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is
+        <p style="word-wrap: break-word">
+          The Embrace Sideboard is a stylish wear. With a top cloth designed to
+          provide superior protection and look great, this storage solution is
           both functional and attractive. It fits seamlessly into any home
           decor, with clean lines and a timeless look. Crafted from premium
           materials for a combination of style, durability, and reliability.

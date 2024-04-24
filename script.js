@@ -53,4 +53,20 @@ document.querySelectorAll('.color-option').forEach(option => {
       this.classList.add('selected');
     });
   });
+  document.querySelectorAll('.small-img-col img').forEach(img => {
+    
+    img.addEventListener('click', function() {
+      // Remove the border from all images
+      document.querySelectorAll('.small-img-col img').forEach(img => {
+        img.classList.remove('selected-img');
+      });
+      
+      // Add the border to the clicked image
+      this.classList.add('selected-img');
+  
+      // Change the main image
+      document.getElementById('Mainimage').src = this.src;
+    });
+  });
+  
   

@@ -1,34 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-family: "Inter", sans-serif;
 }
 body {
   width: 100%;
-
 }
-a {
-  display: inline-block;
-  color: lightgrey;
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
-  white-space: nowrap;
-  padding: 12px;
-  border: 1px solid white;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: all 0.15s ease-in-out;
-}
-
-a:hover {
-  background: rgba(0, 0, 0, 0.23);
-  color: white;
-  transform: scale(1.03);
-}
-a:active {
-  transform: scale(0.98);
-}
-
 #prodetails .single-pro-image img {
   width: 100%;
   height: 100%;
@@ -61,14 +42,14 @@ span {
 }
 
 .container {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   display: flex;
   background: #f3f3f3;
   border-radius: 10rem;
-  width: 6rem;
-  height: 1rem;
-  padding: 1rem;
+  width: 8rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
   justify-content: space-between;
   align-items: center;
   align-content: center;
@@ -102,6 +83,11 @@ button {
   display: flex;
   justify-content: space-between;
 }
+.selected-img {
+  outline: 2px solid #3a4980;
+  outline-offset: -1px;
+  border-radius: 0.5rem;
+}
 
 #prodetails .single-pro-details p {
   margin-top: 10px;
@@ -120,10 +106,8 @@ button {
   #prodetails {
     flex-direction: column;
   }
-  body{
+  body {
     justify-content: center;
-    padding-left: 10vh;
-    padding-right: 10vh;
   }
 }
 
@@ -147,7 +131,7 @@ button {
   .small-img-group {
     width: 50%;
   }
-  body{
+  body {
     margin-top: 10vh;
     margin-bottom: 10vh;
   }
@@ -160,6 +144,7 @@ button {
     margin-right: 5rem;
   }
   #prodetails .single-pro-image {
+    border-radius: 1rem;
     margin-right: 50px;
     height: 66vh;
     width: 50%;
@@ -173,7 +158,8 @@ button {
   .small-img-group {
     width: 50%;
   }
-  body{
+
+  body {
     margin-top: 10vh;
     margin-bottom: 10vh;
   }
@@ -230,9 +216,9 @@ button {
 }
 
 .size-option input:checked {
-  border: 6px solid #3A4980;
+  border: 6px solid #3a4980;
 }
 
 .size-option input:checked + span {
-  color: #3A4980;
+  color: #3a4980;
 }
