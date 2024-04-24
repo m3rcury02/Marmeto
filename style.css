@@ -106,8 +106,12 @@ button {
   #prodetails {
     flex-direction: column;
   }
+  #prodetails .single-pro-details {
+    margin-top: 2rem;
+  }
   body {
     justify-content: center;
+  
   }
 }
 
@@ -126,6 +130,7 @@ button {
     width: 100%;
   }
   #prodetails .single-pro-details {
+    margin-top: 1rem;
     width: 50%;
   }
   .small-img-group {
